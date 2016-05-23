@@ -39,6 +39,7 @@ public class ProA extends DefaultHandler{
 		status = false;
 		System.out.println("file : "+file);
 		File Xmlfile = new File(file);
+		System.out.println(Xmlfile.exists());
 		newFile = new dataList(Xmlfile.getPath());
 		System.out.println("masuk");
 		//System.out.println("string :"+getsome());
@@ -53,9 +54,9 @@ public class ProA extends DefaultHandler{
 		{
 			for(String ss1 : ss)
 			{
-				System.out.print(ss1+" , ");
+				//System.out.print(ss1+" , ");
 			}
-			System.out.println();
+			//System.out.println();
 		}
 		}
 	
@@ -67,16 +68,16 @@ public class ProA extends DefaultHandler{
 	
 	/*public void execute()
 	{
-		// ±¸¼ºÇÏ±â
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
 				Configuration config = new Configuration();
 				config.addEventTypeAutoName("Run");
 				
-				// Query ¹® ¸¸µé±â
+				// Query ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 				EPServiceProvider epService = EPServiceProviderManager.getDefaultProvider(config);
 				String epl = "select * from FactoryLine";// output all 
 				EPStatement statement = epService.getEPAdministrator().createEPL(epl);
 				
-				// Ãâ·ÂÇÏ±â
+				// ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
 				EventListener listener = new EventListener(notif,jobj);
 				statement.addListener(listener);
 	}*/

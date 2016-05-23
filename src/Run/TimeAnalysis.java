@@ -113,7 +113,7 @@ public class TimeAnalysis {
 				//}
 			//}
 		//Open this section for static
-		//cjson = new CreateJSON(this);
+		cjson = new CreateJSON(this);
 		//Open this section for static
 	}
 	
@@ -286,11 +286,11 @@ public class TimeAnalysis {
 	public void setcalculateTime(Date tm1, Date tm2){
 		Date start = tm1;
 	    Date end = tm2;
-	    // ½Ã°£Â÷ÀÌ¸¦ ½Ã°£,ºÐ,ÃÊ¸¦ °öÇÑ °ªÀ¸·Î ³ª´©¸é ÇÏ·ç ´ÜÀ§°¡ ³ª¿È
+	    // ï¿½Ã°ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½Ã°ï¿½,ï¿½ï¿½,ï¿½Ê¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		long diff = end.getTime() - start.getTime();
 		long diffDays = diff / (60 * 1000);
  
-		System.out.println("³¯Â¥Â÷ÀÌ=" + diffDays);
+		System.out.println("ï¿½ï¿½Â¥ï¿½ï¿½ï¿½ï¿½=" + diffDays);
 		setMaxtime(diffDays);
 		setMinTime(diffDays);
 		setSumActTime(diffDays);
@@ -304,7 +304,7 @@ public class TimeAnalysis {
 	public double setTimediff(Date tm1, Date tm2){
 		Date start = tm1;
 	    Date end = tm2;
-	    // ½Ã°£Â÷ÀÌ¸¦ ½Ã°£,ºÐ,ÃÊ¸¦ °öÇÑ °ªÀ¸·Î ³ª´©¸é ÇÏ·ç ´ÜÀ§°¡ ³ª¿È
+	    // ï¿½Ã°ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½Ã°ï¿½,ï¿½ï¿½,ï¿½Ê¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	    //System.out.println(start + " "+end.getDate());
 	    long diff=0;
 	    long diffDays=0;

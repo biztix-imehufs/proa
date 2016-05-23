@@ -26,7 +26,8 @@ public class HelloProA extends HttpServlet {
 		response.setContentType("text/event-stream");
 		response.setCharacterEncoding("UTF-8");
 		
-		String file = "C://Users//USER//workspaceLuna//ProA//detail_activity_cut.mxml";//detail_activity_cut,repairExampleMin,T_PC2months, 141111, T_PCdateconvert2.mxml
+		// String file = "C://Users//USER//workspaceLuna//ProA//detail_activity_cut.mxml";//detail_activity_cut,repairExampleMin,T_PC2months, 141111, T_PCdateconvert2.mxml
+		String file = "/Users/macbook/etc/repo/mxml/detail_activity_cut.mxml";//detail_activity_cut,repairExampleMin,T_PC2months, 141111, T_PCdateconvert2.mxml
 		System.out.println("enter ");
 		File Xmlfile = new File(file);
 		//KXML k = new KXML(file);

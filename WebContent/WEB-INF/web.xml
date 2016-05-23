@@ -4621,7 +4621,7 @@
     </welcome-file-list>
 	
     <!-- Close this section -->
- 	<servlet>
+<!--   	<servlet>
 		<display-name>HelloProA</display-name>
 		<servlet-name>HelloProA</servlet-name>
 		<servlet-class>ssee.HelloProA</servlet-class>
@@ -4630,5 +4630,5 @@
 		<servlet-name>HelloProA</servlet-name>
 		<url-pattern>/HelloProA</url-pattern>
 	</servlet-mapping>  
-	<!-- Close this section -->
+-->	<!-- Close this section -->
 </web-app>

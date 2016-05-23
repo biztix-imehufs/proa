@@ -168,8 +168,9 @@
 
 
 <%
-String path = "C://Users//USER//workspaceLuna//ProA//repairExample.mxml";
+String path = getServletContext().getRealPath("repairExample.mxml");
 System.out.println(path);
+System.out.println("RESOURCEDIR: " + getServletContext().getContextPath());
 ProA p = new ProA(path);
 String process = p.getProcessMap();
 System.out.println("process :"+process);
